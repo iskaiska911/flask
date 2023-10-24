@@ -33,7 +33,7 @@ def webhook():
                 top_p=1,
                 frequency_penalty=0,
                 presence_penalty=0.6,
-                stop=["User->"]
+                stop=["User"]
             )
 
         result = response.get('choices')[0].get('text')
