@@ -5,7 +5,7 @@ import sys
 
 app = Flask(__name__)
 
-openai.api_key = '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'
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 @app.route('/')  # this is the home page route
 def hello_world(
